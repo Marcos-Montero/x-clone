@@ -1,7 +1,10 @@
-import { cookies } from 'next/headers'
-import { NextRequest, NextResponse } from 'next/server'
+import { cookies } from 'next/headers';
+import {
+  type NextRequest,
+  NextResponse,
+} from 'next/server';
 
-import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
 
 // nextjs option that avoids saving on cache the route, so that it is forced to run on the server
 export const dynamic = 'force-dynamic'
